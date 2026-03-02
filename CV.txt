@@ -1,0 +1,105 @@
+Carlos Eduardo
+Caravantes
++52 3221117525
+Puerto Vallarta, Mexico
+carloscara28@hotmail.com
+linkedin.com/carloscaravantsz
+github.com/CarlosCaravanTsz/
+“A true master is an eternal student”
+As a data engineer with 4+ years of experience, I have a solid foundation in leveraging data to extract insights and deliver impactful solutions using Azure and AWS. My expertise includes AI automation with n8n and software development in Java, Python, and JavaScript. Driven by curiosity and a commitment to lifelong learning, I aim to contribute globally, pushing technological boundaries to create transformative solutions.
+DataOps & Cloud Engineer
+Spark Developer
+Software & AI Automation Engineer
+TECHNICALS SKILLS
+Solid data engineering knowledge using Microsoft Azure: Data Factory, Synapse, and Databricks.
+Solid data engineering knowledge using Amazon Web Services: Glue, Redshift and EMR.
+Advanced data manipulation skills in Python, and SQL within Databricks using Spark (PySpark, SparkSQL).
+Strong understanding of Spark working and extensive use of data manipulation and visualization libraries.
+Proficient in data science and analytics workflows with a clear grasp of methodologies and best practices.
+Experience in software development using JavaScript (NextJS/NestJS, React) ecosystem and Golang (Gin).
+Strong understanding of CI/CD workflows and Agile, with firsthand experience using Azure DevOps.
+Solid knowledge of AI automation using n8n and AI agents to streamline business processes.
+SKILLS
+LANGUAGES
+Solid ability to adapt to working with new technologies.
+Strong ability to self-learning and understand software documentation.
+Solid ability to propose various solutions to complex problems.
+Abstraction and good analytical capabilities.
+Strong teamwork and understanding skills.
+English C1
+German B1
+Japanese A2
+EDUCATION
+Puerto Vallarta, Jalisco
+2014 – 2017
+HIGH SCHOOL – Programming Technician
+Centro de Bachillerato Tecnológico Industrial y de Servicios (CBTis) No. 68.
+Mexico City, Mexico City
+2017- 2021
+BACHELOR – Undergraduate Automatic Control Engineer
+Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Zacatenco – National
+Polytechnique Institute.
+Mexico City, Mexico City
+2021
+CERTIFIED – Advanced English Student
+Intermediate & Advanced English Course at McGill University School of Continuing Studies, Montréal, Québec, Canada.
+EXPERIENCE
+Mexico City
+April 2022 – Sept. 2022
+SENSEI AT DEV.F
+Teaching modules 1-4: Fundamentals of Python and SQL for Data
+Science and Data Engineering.
+www.caravantes.xyz
+Mexico City, Online
+2025
+GRADUATED – Master in AI Software Development
+Big School & Universidad Isabel I.
+Mexico City
+Jan. 2022 – Aug. 2022
+DATA ENGINEER TRAINEE AT AXITY
+Pipelines design using Azure Data Factory and Azure Synapse Analytics.
+Notebooks development using PySpark, Spark SQL and Scala in Azure Databricks.
+Mexico City
+Aug. 2022 – Jan. 2023
+DATA ENGINEER CONSULTANT AT AXITY
+Data Infrastructure & Management workflow with Azure Services.
+Stored Procedures development for data processing.
+Delta Lake methodology implementation in Azure ADLS Gen2 resource.
+Mexico City
+Jan. 2023 – April 2024
+DATAOPS ENGINEER AT AXITY
+Project Management using Azure DevOps
+Implementing Agile methodologies using Azure Boards
+CI/CD Pipelines development using Azure Pipelines
+CI/CD Practices for Azure Services like Azure Data Factory and Azure Databricks using Azure Repos.
+& Git flows.
+TECH LEAD SOFTWARE ENGINEER AT AXITY
+Microservices development in Javascript/Java with Docker.
+Apache Airflow as an orchestration tool, implementing “serverless” patterns with Docker.
+Data integration services using Apache NiFi for flow-based programming pipelines.
+Data parsing and conversion between common communication protocols formats (XML, JSON, AVRO, XSD, IDOC).
+Puerto Vallarta, Mexico
+April 2024 – March 2025
+Puerto Vallarta, Mexico
+Sept. 2025 – Jan. 2026
+AI SOFTWARE AUTOMATION ENGINEER AT ZENTROL LLC
+Development of conversational agents using n8n for first-level customer support.
+Design and deployment of open-source infrastructure leveraging Chatwoot, EvolutionCloud, n8n, Pydantic, Portainer, Nginx, and YCloud to enable customer service across social media platforms including Facebook, Messenger, Instagram, Telegram, and web channels.
+Automation of internal business processes through n8n workflows, integrating with Google Services, Microsoft Services, REST APIs, and GoHighLevel CRM.
+LEARNING AND RESEARCH INTERESTS
+Enhance AI Automation workflows for BI applications.
+Machine Learning Algorithms and Genetic Algorithms
+MLOps Engineer.
+Google Cloud Platform certifications (road to multi-cloud engineer).
+Backend developer enthusiast: Django, Laravel, Spring and Typescript.
+Data Mesh and cutting-edge data architectures and techniques.
+High-Perfomance computing with Rust, Zig or C.
+Puerto Vallarta, Mexico
+March 2025 – Now
+sSENIOR ADVANCED AZURE DATA ENGINEER AT GLOBANT
+Designed and implemented enterprise-grade data ingestion frameworks using Azure Data Services, applying Medallion Architecture with Azure Synapse Analytics and Azure Data Factory.
+Developed metadata-driven ingestion pipelines to standardize, transform, and cleanse enterprise data, enabling reusable, dynamic, and highly maintainable data workflows across multiple business domains.
+Engineered robust ingestion processes from complex enterprise systems including SAP ECC, SAP BW/4HANA, SAP Datasphere, and SAP S/4HANA, ensuring data consistency, reliability, and traceability across the organization.
+Provided technical support and optimization for enterprise-level dashboards in Microsoft Power BI, partnering with Business Units to enhance data models, improve performance, and ensure accurate executive reporting.
+Architected and implemented modern Lakehouse solutions leveraging Microsoft Fabric, including OneLake, Data Engineering, and Semantic Models, enabling unified data governance, centralized storage, and streamlined orchestration of enterprise data processes.
+Led DataOps practices by designing and maintaining CI/CD pipelines for Azure Data Factory, Azure Synapse Analytics, and Microsoft Fabric assets, ensuring automated deployments, version control, environment promotion and high-quality delivery standards.
