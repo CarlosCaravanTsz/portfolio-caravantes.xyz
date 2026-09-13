@@ -1173,7 +1173,7 @@ to { stroke-dashoffset: -1000; }
     <div class="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
     <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-fuchsia-500/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
 
-    <!-- Header -->
+      <!-- Header -->
     <div class="reveal flex flex-col text-center mb-16 items-center">
         <span class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5 text-[10px] font-medium text-indigo-300 ring-1 ring-white/10 uppercase tracking-widest backdrop-blur-md mb-6">
             <iconify-icon icon="solar:chat-round-line-linear" class="mr-1"></iconify-icon>
@@ -1191,53 +1191,92 @@ to { stroke-dashoffset: -1000; }
     <div class="reveal grid lg:grid-cols-2 gap-8 items-stretch" style="transition-delay: 200ms;">
         
         <!-- Contact Form (Glassmorphic) -->
-        <div class="relative rounded-3xl border border-white/10 bg-[#0A0A0C]/80 p-8 shadow-2xl backdrop-blur-xl h-full flex flex-col">
-            <!-- Decorative gradient border effect -->
-            <div class="absolute inset-0 rounded-3xl border border-white/5 pointer-events-none"></div>
-            
-            <h3 class="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                <iconify-icon icon="solar:pen-new-square-linear" class="text-indigo-400"></iconify-icon>
+        <div class="relative rounded-3xl bg-[#0A0A0C]/90 p-8 shadow-2xl backdrop-blur-xl h-full flex flex-col overflow-hidden">
+            <!-- Animated gradient border -->
+            <div class="absolute inset-0 rounded-3xl p-[1px] pointer-events-none" style="background: linear-gradient(135deg, rgba(99,102,241,0.3) 0%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.2) 100%);"></div>
+            <div class="absolute inset-[1px] rounded-3xl bg-[#0A0A0C] pointer-events-none"></div>
+
+            <!-- Subtle corner glow -->
+            <div class="absolute -top-20 -left-20 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <h3 class="text-xl font-semibold text-white mb-8 flex items-center gap-3 relative z-10">
+                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center">
+                    <iconify-icon icon="solar:pen-new-square-linear" class="text-indigo-400 text-lg"></iconify-icon>
+                </div>
                 Transmit Message
             </h3>
-            
-            <form class="space-y-5 flex-1 flex flex-col">
+
+            <form id="contact-form" class="space-y-6 flex-1 flex flex-col relative z-10">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div class="space-y-2">
-                        <label class="block text-[10px] font-mono font-medium text-indigo-200/60 uppercase tracking-wider">Identity</label>
-                        <input type="text" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/20 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/20 transition-all" placeholder="Your name">
+                    <div class="space-y-2.5">
+                        <label class="block text-[10px] font-mono font-medium text-white/40 uppercase tracking-widest">Identity</label>
+                        <input type="text" id="contact-name" class="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white placeholder-white/25 focus:border-indigo-500/50 focus:bg-white/[0.05] focus:outline-none focus:ring-2 focus:ring-indigo-500/10 transition-all duration-300 hover:border-white/20" placeholder="Your name">
                     </div>
-                    <div class="space-y-2">
-                        <label class="block text-[10px] font-mono font-medium text-indigo-200/60 uppercase tracking-wider">Contact Node</label>
-                        <input type="email" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/20 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/20 transition-all" placeholder="your@email.com">
+                    <div class="space-y-2.5">
+                        <label class="block text-[10px] font-mono font-medium text-white/40 uppercase tracking-widest">Contact Node</label>
+                        <input type="email" id="contact-email" class="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white placeholder-white/25 focus:border-indigo-500/50 focus:bg-white/[0.05] focus:outline-none focus:ring-2 focus:ring-indigo-500/10 transition-all duration-300 hover:border-white/20" placeholder="your@email.com">
                     </div>
                 </div>
-                
-                <div class="space-y-2">
-                    <label class="block text-[10px] font-mono font-medium text-indigo-200/60 uppercase tracking-wider">Protocol Type</label>
+
+                <div class="space-y-2.5">
+                    <label class="block text-[10px] font-mono font-medium text-white/40 uppercase tracking-widest">Protocol Type</label>
                     <div class="relative">
-                        <select class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/80 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/20 transition-all appearance-none cursor-pointer">
-                            <option class="bg-[#0A0A0C]">System Architecture Consulting</option>
-                            <option class="bg-[#0A0A0C]">Engineering Leadership</option>
-                            <option class="bg-[#0A0A0C]">AI Implementation</option>
-                            <option class="bg-[#0A0A0C]">Other Inquiry</option>
+                        <select id="contact-topic" class="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white/70 focus:border-indigo-500/50 focus:bg-white/[0.05] focus:outline-none focus:ring-2 focus:ring-indigo-500/10 transition-all duration-300 appearance-none cursor-pointer hover:border-white/20">
+                            <option class="bg-[#0A0A0C] text-white">System Architecture Consulting</option>
+                            <option class="bg-[#0A0A0C] text-white">Engineering Leadership</option>
+                            <option class="bg-[#0A0A0C] text-white">AI Implementation</option>
+                            <option class="bg-[#0A0A0C] text-white">Other Inquiry</option>
                         </select>
-                        <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/40">
-                            <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+                        <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/30">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" width="18"></iconify-icon>
                         </div>
                     </div>
                 </div>
-                
-                <div class="space-y-2 flex-1">
-                    <label class="block text-[10px] font-mono font-medium text-indigo-200/60 uppercase tracking-wider">Payload</label>
-                    <textarea rows="4" class="w-full h-full min-h-[120px] rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/20 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/20 transition-all resize-none" placeholder="Describe your system requirements..."></textarea>
+
+                <div class="space-y-2.5 flex-1">
+                    <label class="block text-[10px] font-mono font-medium text-white/40 uppercase tracking-widest">Payload</label>
+                    <textarea id="contact-message" rows="4" class="w-full h-full min-h-[100px] rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white placeholder-white/25 focus:border-indigo-500/50 focus:bg-white/[0.05] focus:outline-none focus:ring-2 focus:ring-indigo-500/10 transition-all duration-300 resize-none hover:border-white/20" placeholder="Describe your system requirements..."></textarea>
                 </div>
-                
-                <button type="submit" class="group w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white text-black px-6 py-3.5 hover:bg-indigo-50 transition-all duration-300 font-semibold text-sm tracking-wide mt-2 shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)]">
-                    <span>Initialize Transmission</span>
-                    <iconify-icon icon="solar:plain-3-bold" class="text-indigo-600 group-hover:translate-x-1 transition-transform"></iconify-icon>
+
+                <button type="submit" class="group relative w-full inline-flex items-center justify-center gap-2.5 rounded-xl bg-white text-black px-6 py-4 hover:bg-indigo-50 transition-all duration-300 font-semibold text-sm tracking-wide mt-auto overflow-hidden">
+                    <!-- Button glow effect -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/0 via-indigo-500/10 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <span class="relative z-10">Initialize Transmission</span>
+                    <iconify-icon icon="solar:plain-3-bold" class="relative z-10 text-indigo-600 text-lg group-hover:translate-x-1 transition-transform"></iconify-icon>
                 </button>
             </form>
+
+            <!-- WhatsApp Form Handler -->
+            <script>
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const name = document.getElementById('contact-name').value || 'Not provided';
+                    const email = document.getElementById('contact-email').value || 'Not provided';
+                    const topic = document.getElementById('contact-topic').value;
+                    const message = document.getElementById('contact-message').value || 'No message';
+
+                    const whatsappMessage = `*New Contact from Portfolio*
+
+*Name:* ${name}
+*Email:* ${email}
+*Topic:* ${topic}
+
+*Message:*
+${message}`;
+
+                    const phoneNumber = '523221117525';
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+                    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+                });
+            </script>
         </div>
+
+    <!-- Content Grid: Form & Info -->
+    <div class="reveal grid lg:grid-cols-2 gap-8 items-stretch" style="transition-delay: 200ms;">
+        
+        <!-- Contact Form (Glassmorphic) -->
 
         <!-- Contact Info & Socials -->
         <div class="flex flex-col gap-6 h-full">
@@ -1248,12 +1287,11 @@ to { stroke-dashoffset: -1000; }
                     <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 group-hover:scale-105 transition-transform duration-300">
                         <iconify-icon icon="solar:letter-linear" width="24"></iconify-icon>
                     </div>
-                    <div>
+                    <div >
                         <h3 class="text-lg font-medium text-white mb-1">Direct Channel</h3>
                         <p class="text-sm text-white/40 mb-4 font-light">Available for encrypted communication and project inquiries.</p>
                         <a href="mailto:carloscara28@hotmail.com" class="inline-flex items-center gap-2 text-sm text-indigo-300 hover:text-white transition-colors">
                             carloscara28@hotmail.com
-                            <iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon>
                         </a>
                     </div>
                 </div>
