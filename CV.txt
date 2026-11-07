@@ -8,8 +8,8 @@ github.com/CarlosCaravanTsz/
 “A true master is an eternal student”
 As a data engineer with 4+ years of experience, I have a solid foundation in leveraging data to extract insights and deliver impactful solutions using Azure and AWS. My expertise includes AI automation with n8n and software development in Java, Python, and JavaScript. Driven by curiosity and a commitment to lifelong learning, I aim to contribute globally, pushing technological boundaries to create transformative solutions.
 DataOps & Cloud Engineer
-Spark Developer
-Software & AI Automation Engineer
+Full Stack Software & AI Engineer
+Automotive/HPC Enthusiast
 TECHNICALS SKILLS
 Solid data engineering knowledge using Microsoft Azure: Data Factory, Synapse, and Databricks.
 Solid data engineering knowledge using Amazon Web Services: Glue, Redshift and EMR.
@@ -94,8 +94,16 @@ Google Cloud Platform certifications (road to multi-cloud engineer).
 Backend developer enthusiast: Django, Laravel, Spring and Typescript.
 Data Mesh and cutting-edge data architectures and techniques.
 High-Perfomance computing with Rust, Zig or C.
+June 2026 – Now
+DATA ENGINEER FULL STACK AT JLL
+Data integration pipelines for the EDP.
+Design of APIs consuming the Databricks SQL Statement Execution API.
+Deployment and tuning of Databricks Genie agents.
+MCP (Model Context Protocol) integration.
+Advanced metric view design.
+Genie ontology and context layer design.
 Puerto Vallarta, Mexico
-March 2025 – Now
+March 2025 – May 2026
 sSENIOR ADVANCED AZURE DATA ENGINEER AT GLOBANT
 Designed and implemented enterprise-grade data ingestion frameworks using Azure Data Services, applying Medallion Architecture with Azure Synapse Analytics and Azure Data Factory.
 Developed metadata-driven ingestion pipelines to standardize, transform, and cleanse enterprise data, enabling reusable, dynamic, and highly maintainable data workflows across multiple business domains.

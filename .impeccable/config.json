@@ -1,0 +1,137 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T04:05:41.030Z",
+        "reason": "Static-scan only: rendered CDP scans of v3.html at 1440, 1100 and 390px (ES and EN) report no cramped-padding; education rows have 22px block padding"
+      },
+      {
+        "rule": "marketing-buzzword",
+        "value": "*",
+        "files": [
+          "cv.html"
+        ],
+        "createdAt": "2026-11-07T04:05:41.190Z",
+        "reason": "Phrase is verbatim from CV.txt, the authoritative CV source named in PRODUCT.md"
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "createdAt": "2026-11-07T06:06:00.491Z",
+        "reason": "user confirmed brand typeface"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "assets/styles.css"
+        ],
+        "createdAt": "2026-11-07T06:27:34.231Z",
+        "reason": "user pinned the V2 visual world (2026-11-07); gradient name and heading words are part of that brief"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T06:37:09.594Z",
+        "reason": "user pinned the V2 visual world (2026-11-07); gradient name and heading words are part of that brief"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-07T06:37:39.668Z",
+        "reason": "user chose Inter + JetBrains Mono from V2 on 2026-11-07"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T06:37:50.056Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "assets/styles.css"
+        ],
+        "createdAt": "2026-11-07T06:37:50.254Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "ai-color-palette",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T06:37:50.443Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "ai-color-palette",
+        "value": "*",
+        "files": [
+          "assets/styles.css"
+        ],
+        "createdAt": "2026-11-07T06:37:50.613Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T06:37:50.785Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "assets/styles.css"
+        ],
+        "createdAt": "2026-11-07T06:37:50.970Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T06:37:51.156Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "assets/styles.css"
+        ],
+        "createdAt": "2026-11-07T06:37:51.339Z",
+        "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
+      },
+      {
+        "rule": "gray-on-color",
+        "value": "*",
+        "files": [
+          "v3.html"
+        ],
+        "createdAt": "2026-11-07T06:38:06.664Z",
+        "reason": "static engine composites the form's gradient border (rgba 66,220,180,.3) as the input background; rendered CDP scans report no contrast issue; real input bg is ~#0f0f12 with placeholder at 58% white"
+      }
+    ]
+  }
+}

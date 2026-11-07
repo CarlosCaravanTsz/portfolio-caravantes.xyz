@@ -1,0 +1,26 @@
+/* Caravantes AI — identity details. The palette itself lives in the custom
+   properties at the top of styles.css (#00AD84 brand green, #42DCB4 accent,
+   #080B0B background). */
+.brand-theme .brand-logo {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.brand-theme .brand-wordmark {
+  font: 600 23px var(--display);
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+.brand-theme .brand-ai {
+  margin-left: 5px;
+  color: var(--brand);
+  font-weight: 600;
+}
+.brand-theme .site-footer .brand-logo {
+  width: 26px;
+  height: 26px;
+}
+.brand-theme .site-footer .brand-wordmark {
+  font-size: 17px;
+}

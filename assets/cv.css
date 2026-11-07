@@ -1,0 +1,248 @@
+/* CV page: a light paper sheet on the brand background; plain white in print. */
+:root {
+  --ink: #0f1a16;
+  --ink-soft: #3d4e47;
+  --rule: #d5e0db;
+  --brand: #00805f;
+  --page: #030305;
+  --paper: #fbfcfb;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--page);
+}
+body {
+  margin: 0;
+  background: var(--page);
+  font: 400 15px/1.6 "Inter", system-ui, sans-serif;
+  color: var(--ink);
+  text-rendering: optimizeLegibility;
+}
+::selection {
+  background: #42dcb4;
+  color: #04170c;
+}
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #42dcb4;
+  outline-offset: 3px;
+}
+.cv-toolbar {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: #d9e6e0;
+  background: #030305;
+  font-size: 14px;
+}
+.cv-toolbar a {
+  text-decoration: none;
+  padding: 8px 0;
+}
+.cv-toolbar a:hover {
+  color: #42dcb4;
+}
+.cv-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cv-toolbar button {
+  font: 600 14px "Inter", system-ui, sans-serif;
+  background: #00ad84;
+  color: #041710;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.cv-toolbar button:hover {
+  background: #30d7aa;
+}
+.cv-sheet {
+  max-width: 880px;
+  margin: 0 auto 56px;
+  padding: 56px 64px;
+  background: var(--paper);
+  border-radius: 6px;
+}
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--ink);
+}
+h1 {
+  font: 700 34px/1.1 "Inter", sans-serif;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.cv-title {
+  margin: 0;
+  text-wrap: balance;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--brand);
+}
+.cv-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: right;
+  color: var(--ink-soft);
+}
+h2 {
+  font: 600 13px/1.4 "Inter", sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin: 32px 0 12px;
+}
+section > p,
+.cv-columns p {
+  margin: 0;
+  color: var(--ink-soft);
+  max-width: 72ch;
+  text-wrap: pretty;
+}
+.cv-role {
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+  break-inside: avoid;
+}
+.cv-role:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+.cv-role header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 24px;
+}
+.cv-role h3 {
+  font: 600 17px/1.35 "Inter", sans-serif;
+  margin: 0;
+}
+.cv-org {
+  grid-column: 1;
+  margin: 2px 0 0;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+.cv-dates {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.cv-role ul,
+.cv-columns ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--ink-soft);
+}
+.cv-role li,
+.cv-columns li {
+  margin-bottom: 4px;
+  text-wrap: pretty;
+}
+.cv-columns {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 16px;
+  padding-top: 8px;
+}
+.cv-columns ul.cv-education {
+  list-style: none;
+  padding: 0;
+}
+.cv-education b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.cv-motto {
+  margin: 32px 0 0;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+@media (max-width: 720px) {
+  .cv-sheet {
+    padding: 32px 22px;
+    border-radius: 0;
+  }
+  .cv-header,
+  .cv-columns {
+    display: block;
+  }
+  .cv-contact {
+    text-align: left;
+    margin-top: 16px;
+  }
+  .cv-role header {
+    grid-template-columns: 1fr;
+  }
+  .cv-dates {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 2px;
+  }
+  h1 {
+    font-size: 29px;
+  }
+}
+@media print {
+  @page {
+    margin: 14mm 14mm 16mm;
+  }
+  html,
+  body {
+    background: #fff;
+  }
+  body {
+    font-size: 10.5pt;
+  }
+  .cv-toolbar {
+    display: none;
+  }
+  .cv-sheet {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+  .cv-role {
+    padding: 10px 0;
+  }
+}
+.cv-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

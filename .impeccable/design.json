@@ -1,0 +1,650 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T07:00:13+00:00",
+  "title": "Design System: Caravantes AI — Carlos Caravantes portfolio",
+  "extensions": {
+    "colorMeta": {
+      "void": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "#030305",
+        "oklch": "oklch(9.9% 0.008 284.8)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#232427",
+          "#3f3f43",
+          "#5d5d61",
+          "#808083",
+          "#a4a4a7",
+          "#cacacc",
+          "#eeeeef"
+        ]
+      },
+      "void-raised": {
+        "role": "neutral",
+        "displayName": "Void Raised",
+        "canonical": "#050507",
+        "oklch": "oklch(11.6% 0.006 285.4)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#242427",
+          "#3f3f42",
+          "#5d5d60",
+          "#808082",
+          "#a4a4a6",
+          "#cacacc",
+          "#eeeeef"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Glass",
+        "canonical": "#0a0a0c",
+        "oklch": "oklch(14.6% 0.004 285.9)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#242426",
+          "#3f3f41",
+          "#5d5d5f",
+          "#808082",
+          "#a4a4a6",
+          "#cacacb",
+          "#eeeeef"
+        ]
+      },
+      "panel-raised": {
+        "role": "neutral",
+        "displayName": "Panel Raised",
+        "canonical": "#0e0e12",
+        "oklch": "oklch(16.6% 0.008 285.5)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#232428",
+          "#3f3f43",
+          "#5d5d61",
+          "#808083",
+          "#a4a4a7",
+          "#cacacc",
+          "#eeeeef"
+        ]
+      },
+      "art-well": {
+        "role": "neutral",
+        "displayName": "Art Well",
+        "canonical": "#08080a",
+        "oklch": "oklch(13.5% 0.005 285.8)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#242426",
+          "#3f3f42",
+          "#5d5d5f",
+          "#808082",
+          "#a4a4a6",
+          "#cacacb",
+          "#eeeeef"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(255, 255, 255, 0.08)"
+      },
+      "hairline-soft": {
+        "role": "neutral",
+        "displayName": "Soft Hairline",
+        "canonical": "rgba(255, 255, 255, 0.05)"
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "rgba(255, 255, 255, 0.16)"
+      },
+      "starlight": {
+        "role": "neutral",
+        "displayName": "Starlight",
+        "canonical": "#ececee",
+        "oklch": "oklch(94.4% 0.003 286.3)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5e",
+          "#808081",
+          "#a4a4a6",
+          "#cacacc",
+          "#eeeeef"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Heading White",
+        "canonical": "#ffffff"
+      },
+      "text-soft": {
+        "role": "neutral",
+        "displayName": "Soft White",
+        "canonical": "rgba(255, 255, 255, 0.74)"
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Muted White",
+        "canonical": "rgba(255, 255, 255, 0.58)"
+      },
+      "text-faint": {
+        "role": "neutral",
+        "displayName": "Faint White",
+        "canonical": "rgba(255, 255, 255, 0.52)"
+      },
+      "indigo": {
+        "role": "secondary",
+        "displayName": "Atmosphere Indigo",
+        "canonical": "#6366f1",
+        "oklch": "oklch(58.5% 0.204 277.1)",
+        "tonalRamp": [
+          "#070624",
+          "#1b0b67",
+          "#302b93",
+          "#4949c2",
+          "#676bf5",
+          "#8f9afe",
+          "#bec7fc",
+          "#eaedff"
+        ]
+      },
+      "indigo-400": {
+        "role": "secondary",
+        "displayName": "Beam Indigo",
+        "canonical": "#818cf8",
+        "oklch": "oklch(68.0% 0.158 276.9)",
+        "tonalRamp": [
+          "#07091c",
+          "#1a1b52",
+          "#32367a",
+          "#4d53a5",
+          "#6b75d6",
+          "#8f9bf9",
+          "#bdc6ff",
+          "#eaedfe"
+        ]
+      },
+      "indigo-300": {
+        "role": "secondary",
+        "displayName": "Starlight Indigo",
+        "canonical": "#a5b4fc",
+        "oklch": "oklch(78.5% 0.104 274.7)",
+        "tonalRamp": [
+          "#080a14",
+          "#1c213e",
+          "#363d62",
+          "#515a88",
+          "#717cb4",
+          "#92a0e2",
+          "#bcc8fa",
+          "#e9eeff"
+        ]
+      },
+      "emerald-accent": {
+        "role": "primary",
+        "displayName": "Caravantes Emerald",
+        "canonical": "#42dcb4",
+        "oklch": "oklch(80.5% 0.140 171.5)",
+        "tonalRamp": [
+          "#000f0a",
+          "#002c21",
+          "#084b3b",
+          "#116d57",
+          "#119678",
+          "#2fbe9a",
+          "#58e7bf",
+          "#c6fce9"
+        ]
+      },
+      "emerald-accent-hover": {
+        "role": "primary",
+        "displayName": "Caravantes Emerald Hover",
+        "canonical": "#6ae8c6",
+        "oklch": "oklch(85.0% 0.123 173.0)",
+        "tonalRamp": [
+          "#020e0a",
+          "#002c22",
+          "#044b3c",
+          "#1c6c59",
+          "#35937b",
+          "#4ebb9e",
+          "#68e4c3",
+          "#c9fbeb"
+        ]
+      },
+      "emerald-brand": {
+        "role": "primary",
+        "displayName": "Brand Green",
+        "canonical": "#00ad84",
+        "oklch": "oklch(66.4% 0.134 168.3)",
+        "tonalRamp": [
+          "#001008",
+          "#002c1f",
+          "#074c39",
+          "#146e54",
+          "#1e9573",
+          "#3bbe96",
+          "#79e2bd",
+          "#cffae8"
+        ]
+      },
+      "emerald-ink": {
+        "role": "primary",
+        "displayName": "Emerald Ink",
+        "canonical": "#03140e",
+        "oklch": "oklch(17.3% 0.028 169.4)",
+        "tonalRamp": [
+          "#060d0a",
+          "#172822",
+          "#34443e",
+          "#53615c",
+          "#77847e",
+          "#9ca8a3",
+          "#c4cdc9",
+          "#ecefee"
+        ]
+      },
+      "tone-emerald": {
+        "role": "tertiary",
+        "displayName": "Data Emerald",
+        "canonical": "#34d399",
+        "oklch": "oklch(77.3% 0.153 163.2)",
+        "tonalRamp": [
+          "#000f07",
+          "#022c1c",
+          "#024c34",
+          "#076f4d",
+          "#00986a",
+          "#27c08a",
+          "#5fe8b0",
+          "#c8fde2"
+        ]
+      },
+      "tone-rose": {
+        "role": "tertiary",
+        "displayName": "Ops Rose",
+        "canonical": "#fb7185",
+        "oklch": "oklch(71.9% 0.169 13.4)",
+        "tonalRamp": [
+          "#190406",
+          "#480315",
+          "#701d2d",
+          "#993647",
+          "#c95365",
+          "#fb7185",
+          "#ffb3ba",
+          "#fee9ea"
+        ]
+      },
+      "tone-fuchsia": {
+        "role": "tertiary",
+        "displayName": "Exploration Fuchsia",
+        "canonical": "#e879f9",
+        "oklch": "oklch(74.8% 0.207 322.2)",
+        "tonalRamp": [
+          "#140417",
+          "#3c0444",
+          "#5f1e69",
+          "#853791",
+          "#b054be",
+          "#dd72ee",
+          "#f1affb",
+          "#fce6ff"
+        ]
+      },
+      "fuchsia-mist": {
+        "role": "tertiary",
+        "displayName": "Fuchsia Mist",
+        "canonical": "#f5d0fe",
+        "oklch": "oklch(90.3% 0.073 319.6)",
+        "tonalRamp": [
+          "#0d0a0e",
+          "#2b1f2d",
+          "#49394c",
+          "#69566e",
+          "#8f7694",
+          "#b699bd",
+          "#dfbde7",
+          "#f9e7fe"
+        ]
+      },
+      "indigo-mist": {
+        "role": "secondary",
+        "displayName": "Indigo Mist",
+        "canonical": "#eef0ff",
+        "oklch": "oklch(95.8% 0.020 279.9)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232428",
+          "#3f3f45",
+          "#5c5d64",
+          "#7e7f88",
+          "#a2a4af",
+          "#c8c9d6",
+          "#edeef5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero name only; first line white fade, second line indigo-white-indigo gradient."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s; the closing phrase may be one gradient word group."
+      },
+      "role": {
+        "displayName": "Role",
+        "purpose": "Hero role line between mono <Role> tags."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Arsenal cards and project group headings."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Project, career, education and case subheads (17-19px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default running text."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero and section intros, weight 300, max about 60ch."
+      },
+      "small": {
+        "displayName": "Small UI",
+        "purpose": "Nav links, chips, meta text; buttons run at 15px."
+      },
+      "label": {
+        "displayName": "Mono Label",
+        "purpose": "Dates, fact corners, badges, field labels, counts; uppercase for metadata rows."
+      },
+      "mono-data": {
+        "displayName": "Mono Data",
+        "purpose": "Tech stacks, tool lists, years with tabular numerals."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The Caravantes AI wordmark only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "emerald-lift",
+        "value": "0 14px 40px -14px rgba(66, 220, 180, 0.6)",
+        "purpose": "Primary button hover."
+      },
+      {
+        "name": "tone-lift",
+        "value": "0 16px 34px -12px rgba(var(--tone-rgb), 0.55)",
+        "purpose": "Atlas node tile hover and focus."
+      },
+      {
+        "name": "node-rest",
+        "value": "0 10px 20px -8px rgba(0, 0, 0, 0.6)",
+        "purpose": "Atlas node tiles at rest."
+      },
+      {
+        "name": "core-glow",
+        "value": "0 20px 50px -20px rgba(99, 102, 241, 0.55)",
+        "purpose": "Hub core disc and experience orb (orb uses 0 22px 50px -20px at 0.6)."
+      },
+      {
+        "name": "dialog-float",
+        "value": "0 40px 120px -20px rgba(0, 0, 0, 0.9)",
+        "purpose": "Case dialog over a blurred rgba(3, 3, 5, 0.82) backdrop."
+      },
+      {
+        "name": "ambient-indigo",
+        "value": "radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent 65%)",
+        "purpose": "640px section light behind content (a background, not a box-shadow)."
+      },
+      {
+        "name": "glass-header",
+        "value": "background: rgba(3, 3, 5, 0.78); backdrop-filter: blur(16px) saturate(140%)",
+        "purpose": "Header after scroll."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for lifts, reveals and icon nudges."
+      },
+      {
+        "name": "hero-reveal",
+        "value": "1.2s; translateY(24px) scale(0.98) blur(8px) to none; staggered 0/120/220/320ms",
+        "purpose": "The one authored hero entrance."
+      },
+      {
+        "name": "section-reveal",
+        "value": "0.9s; translateY(18px) to none; 3.5s safety fallback",
+        "purpose": "Scroll reveals for headings and cards."
+      },
+      {
+        "name": "hover-lift",
+        "value": "translateY(-2px) buttons, translateY(-4px) cards; 0.35-0.5s",
+        "purpose": "Hover response."
+      },
+      {
+        "name": "beam-flow",
+        "value": "3.2s linear infinite, dash 16 100",
+        "purpose": "Light pulse travelling along hub beams."
+      },
+      {
+        "name": "core-breathe",
+        "value": "4s ease-in-out infinite, opacity to 0.55",
+        "purpose": "Core halo."
+      },
+      {
+        "name": "ring-spin",
+        "value": "14s, 22s reverse, 12s linear infinite",
+        "purpose": "Core rings and experience orb ring."
+      },
+      {
+        "name": "card-orbit",
+        "value": "12s linear infinite along inset(14px round 20px), staggered -3s",
+        "purpose": "Tone dot orbiting arsenal cards."
+      },
+      {
+        "name": "particle-field",
+        "value": "canvas; indigo rgba(99, 102, 241) with about 7% emerald rgba(66, 220, 180); fades in over 1.6s to 0.7 opacity",
+        "purpose": "Hero universe; paused offscreen, on hidden tabs and under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animations and transitions ~0; reveals shown; beam pulses and orbit dots hidden",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xl",
+        "value": "1240px"
+      },
+      {
+        "name": "lg",
+        "value": "1100px"
+      },
+      {
+        "name": "md",
+        "value": "960px"
+      },
+      {
+        "name": "md-sm",
+        "value": "860px"
+      },
+      {
+        "name": "sm",
+        "value": "760px"
+      },
+      {
+        "name": "map-sm",
+        "value": "700px"
+      },
+      {
+        "name": "xs",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Emerald pill for the one main action on a view (see cases, contact, walk the flow).",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Ver casos profesionales <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M6 13l6 6 6-6\"/></svg></a>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:1px solid transparent;border-radius:999px;font:600 15px/1 var(--sans);letter-spacing:.005em;text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),background-color .25s,border-color .25s,color .25s,box-shadow .35s var(--ease)}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--indigo-300);outline-offset:3px}.ds-btn-primary{background:var(--accent);color:#03140e}.ds-btn-primary svg{transition:transform .35s var(--ease)}.ds-btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 14px 40px -14px rgba(66,220,180,.6)}.ds-btn-primary:hover svg{transform:translateY(2px)}"
+    },
+    {
+      "name": "Glass Button",
+      "kind": "button",
+      "refersTo": "button-glass",
+      "description": "Secondary pill on the void: translucent fill, hairline border, backdrop blur, indigo icon.",
+      "html": "<div style=\"padding:24px;background:#030305\"><a class=\"ds-btn ds-btn-glass\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#818cf8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z\"/><path d=\"M14 3v5h5M9 13h6M9 17h6\"/></svg> Ver CV (inglés)</a></div>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:1px solid transparent;border-radius:999px;font:600 15px/1 var(--sans);letter-spacing:.005em;text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),background-color .25s,border-color .25s,color .25s}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--indigo-300);outline-offset:3px}.ds-btn-glass{border-color:rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.ds-btn-glass:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff;transform:translateY(-2px)}"
+    },
+    {
+      "name": "Light Submit Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "White full-width submit inside the contact form.",
+      "html": "<div style=\"padding:24px;background:#0a0a0c;width:320px\"><button class=\"ds-btn ds-btn-light\" type=\"button\">Continuar en WhatsApp <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></div>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:1px solid transparent;font:600 15px/1 var(--sans);cursor:pointer;transition:transform .35s var(--ease),background-color .25s}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--indigo-300);outline-offset:3px}.ds-btn-light{width:100%;border-radius:14px;background:#fff;color:#050507}.ds-btn-light svg{transition:transform .35s var(--ease)}.ds-btn-light:hover{background:#eef0ff}.ds-btn-light:hover svg{transform:translateX(3px)}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-contact",
+      "description": "Fixed header (scrolled state shown): wordmark, pill links with mono count, ES/EN switch, emerald contact pill.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-brand\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#00ad84\" stroke-width=\"2.2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M17 6.5A7 7 0 1 0 17 17.5\"/><path d=\"M7 17.5A7 7 0 1 0 7 6.5\" opacity=\".6\"/></svg><span class=\"ds-wm\">Caravantes<b>AI</b></span></span><nav><a class=\"active\" href=\"#\">Proyectos <span class=\"ds-count\">07</span></a><a href=\"#\">Experiencia</a><a href=\"#\">Formación</a></nav><div class=\"ds-lang\"><button aria-pressed=\"true\">ES</button><button aria-pressed=\"false\">EN</button></div><a class=\"ds-cta\" href=\"#\">Hablemos</a></header>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-nav{display:flex;align-items:center;gap:20px;padding:14px 28px;background:rgba(3,3,5,.78);border-bottom:1px solid var(--line-soft);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);font-family:var(--sans)}.ds-brand{display:inline-flex;align-items:center;gap:10px;margin-right:auto}.ds-wm{font:600 23px \"Space Grotesk\",\"Inter\",sans-serif;letter-spacing:-.04em;color:#fff;white-space:nowrap}.ds-wm b{margin-left:5px;font-weight:600;color:var(--brand)}.ds-nav nav{display:flex;gap:4px}.ds-nav nav a{display:inline-flex;gap:6px;padding:8px 12px;border-radius:999px;color:rgba(255,255,255,.66);font-size:14px;font-weight:500;text-decoration:none;transition:color .2s,background-color .2s}.ds-nav nav a:hover,.ds-nav nav a.active{color:#fff}.ds-nav nav a.active{background:rgba(255,255,255,.06)}.ds-nav a:focus-visible,.ds-nav button:focus-visible{outline:2px solid var(--indigo-300);outline-offset:3px}.ds-count{font:500 12px var(--mono);color:var(--indigo-300)}.ds-lang{display:flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03)}.ds-lang button{min-width:38px;min-height:30px;border:0;border-radius:999px;background:none;color:rgba(255,255,255,.6);font:500 12px var(--mono);letter-spacing:.04em;cursor:pointer}.ds-lang button:hover{color:#fff}.ds-lang button[aria-pressed=true]{background:rgba(255,255,255,.1);color:#fff}.ds-cta{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:999px;background:var(--accent);color:#03140e;font-size:14px;font-weight:600;text-decoration:none;transition:background-color .2s,transform .3s var(--ease)}.ds-cta:hover{background:var(--accent-hover);transform:translateY(-1px)}"
+    },
+    {
+      "name": "Filter Tray",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Pill filters inside a hairline tray; the active pill takes a 10% white fill; counts in mono indigo.",
+      "html": "<div class=\"ds-tray\"><button class=\"ds-filter active\">Todo <span>07</span></button><button class=\"ds-filter\">Experiencia profesional <span>03</span></button><button class=\"ds-filter\">Exploración <span>04</span></button></div>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-tray{display:inline-flex;gap:6px;padding:4px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03)}.ds-filter{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:0 16px;border:0;border-radius:999px;background:none;color:rgba(255,255,255,.64);font:500 14px var(--sans);cursor:pointer;transition:background-color .2s,color .2s}.ds-filter:hover{color:#fff}.ds-filter.active{background:rgba(255,255,255,.1);color:#fff}.ds-filter:focus-visible{outline:2px solid var(--indigo-300);outline-offset:3px}.ds-filter span{font:500 12px var(--mono);color:var(--indigo-300)}"
+    },
+    {
+      "name": "Tags and Kind Badge",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Mono stack tags for evidence; the dashed fuchsia kind badge marks labs and exploration.",
+      "html": "<ul class=\"ds-tags\"><li>Azure Data Factory</li><li>Synapse</li><li>Microsoft Fabric</li><li class=\"ds-lab\">Lab interactivo</li></ul>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-tags li{display:inline-flex;align-items:center;min-height:28px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);font:12px var(--mono);color:rgba(255,255,255,.72);transition:border-color .2s,color .2s}.ds-tags li:hover{border-color:rgba(var(--tone-rgb),.6);color:#fff}.ds-tags li.ds-lab{border-style:dashed;border-color:rgba(232,121,249,.4);color:#f5d0fe;font-weight:500;letter-spacing:.06em;text-transform:uppercase}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact form field: mono uppercase label, translucent field, indigo focus.",
+      "html": "<label class=\"ds-field\"><span>Tu nombre</span><input placeholder=\"¿Cómo te llamas?\"></label>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-field{display:grid;gap:10px;width:320px}.ds-field span{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.ds-field input{padding:14px 16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.03);font:15px var(--sans);color:#fff;transition:border-color .25s,background-color .25s}.ds-field input::placeholder{color:rgba(255,255,255,.58)}.ds-field input:hover{border-color:rgba(255,255,255,.22)}.ds-field input:focus{outline:2px solid rgba(129,140,248,.55);outline-offset:1px;border-color:rgba(129,140,248,.7);background:rgba(255,255,255,.05)}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Pill search with leading icon and a mono key cap; the border turns indigo on focus.",
+      "html": "<label class=\"ds-search\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><input type=\"search\" placeholder=\"Buscar proyecto o tecnología\"><kbd>/</kbd></label>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-search{display:flex;align-items:center;gap:10px;width:380px;min-height:48px;padding:0 8px 0 18px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);color:var(--muted);transition:border-color .25s,background-color .25s}.ds-search:hover{border-color:rgba(255,255,255,.18)}.ds-search:focus-within{border-color:rgba(129,140,248,.6);background:rgba(255,255,255,.05)}.ds-search input{flex:1;min-width:0;min-height:44px;border:0;background:none;font:15px var(--sans);color:#fff;outline:none}.ds-search input::placeholder{color:rgba(255,255,255,.58)}.ds-search kbd{display:grid;place-items:center;min-width:28px;height:28px;border:1px solid var(--line);border-radius:8px;font:12px var(--mono);color:var(--muted)}"
+    },
+    {
+      "name": "Arsenal Card",
+      "kind": "card",
+      "refersTo": "card-arsenal",
+      "description": "Feature card: tone corner-glow border, corner bloom, icon tile, employer badge and tone check list.",
+      "html": "<article class=\"ds-arsenal\" style=\"--tone:#34d399;--tone-rgb:16,185,129\"><div class=\"ds-head\"><span class=\"ds-tile\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/></svg></span><span class=\"ds-badge\">Globant · Axity</span></div><h3>Data Engineering</h3><ul><li>Azure Data Factory, Synapse, Databricks</li><li>Microsoft Fabric, OneLake</li><li>Delta Lake y arquitectura Medallion</li></ul></article>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-arsenal{position:relative;overflow:hidden;width:440px;padding:32px;border:1px solid transparent;border-radius:24px;background:linear-gradient(rgba(10,10,12,.94),rgba(10,10,12,.94)) padding-box,radial-gradient(circle 340px at 0 0,rgba(var(--tone-rgb),.5),rgba(255,255,255,.06) 70%) border-box;font-family:var(--sans);transition:transform .5s var(--ease)}.ds-arsenal::before{content:\"\";position:absolute;top:-48px;left:-48px;width:220px;height:120px;border-radius:50%;background:rgba(var(--tone-rgb),.3);filter:blur(44px);opacity:.45;transition:opacity .5s;pointer-events:none}.ds-arsenal:hover{transform:translateY(-4px)}.ds-arsenal:hover::before{opacity:.75}.ds-head{position:relative;display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px}.ds-tile{display:inline-grid;place-items:center;width:48px;height:48px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.04);color:var(--tone);transition:transform .35s var(--ease),color .3s}.ds-arsenal:hover .ds-tile{transform:scale(1.08);color:#fff}.ds-badge{padding:4px 9px;border:1px solid rgba(var(--tone-rgb),.3);border-radius:7px;background:rgba(var(--tone-rgb),.1);font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb,var(--tone) 45%,#fff)}.ds-arsenal h3{position:relative;margin:0 0 22px;font-size:22px;font-weight:600;letter-spacing:-.02em;color:#fff}.ds-arsenal ul{position:relative;display:grid;gap:12px;margin:0;padding:0;list-style:none}.ds-arsenal li{display:flex;gap:12px;font-size:15px;line-height:1.5;color:rgba(255,255,255,.7);transition:color .3s}.ds-arsenal:hover li{color:rgba(255,255,255,.84)}.ds-arsenal li::before{content:\"\";flex-shrink:0;width:13px;height:13px;margin-top:4px;border:1.6px solid var(--tone);border-radius:50%}"
+    },
+    {
+      "name": "Career Card",
+      "kind": "card",
+      "refersTo": "card-career",
+      "description": "Experience card: tone dateline (dates only), role, company, summary; the border warms to the tone on hover.",
+      "html": "<article class=\"ds-career\" style=\"--tone:#34d399;--tone-rgb:16,185,129\"><p class=\"ds-date\">Mar 2025 — actualidad</p><h3>Senior Advanced Azure Data Engineer</h3><p class=\"ds-co\">Globant</p><p class=\"ds-sum\">Diseño frameworks de ingestión empresarial guiados por metadatos, con arquitectura Medallion e integración de sistemas SAP.</p></article>",
+      "css": ":host{--bg:#030305;--panel:#0a0a0c;--line:rgba(255,255,255,.08);--line-soft:rgba(255,255,255,.05);--text:#ececee;--muted:rgba(255,255,255,.58);--faint:rgba(255,255,255,.52);--indigo:#6366f1;--indigo-300:#a5b4fc;--indigo-400:#818cf8;--accent:#42dcb4;--accent-hover:#6ae8c6;--brand:#00ad84;--sans:\"Inter\",system-ui,sans-serif;--mono:\"JetBrains Mono\",ui-monospace,monospace;--ease:cubic-bezier(.16,1,.3,1);--tone:#818cf8;--tone-rgb:99,102,241}.ds-career{width:280px;padding:28px 24px;border:1px solid var(--line-soft);border-radius:20px;background:var(--panel);font-family:var(--sans);transition:border-color .4s,background-color .4s}.ds-career:hover{border-color:rgba(var(--tone-rgb),.35);background:#0c0c10}.ds-date{display:flex;align-items:center;gap:10px;margin:0 0 14px;font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--tone)}.ds-date::before{content:\"\";width:24px;border-top:1px solid rgba(var(--tone-rgb),.6)}.ds-career h3{margin:0;font-size:18px;font-weight:600;line-height:1.3;letter-spacing:-.015em;color:#fff}.ds-co{margin:6px 0 14px;font-size:14px;font-weight:500;color:rgba(255,255,255,.74)}.ds-sum{margin:0;font-size:14.5px;font-weight:300;line-height:1.65;color:rgba(255,255,255,.68)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Honest Night Console",
+    "overview": "A near-black sky (#030305) holds a slow particle field, a faint 64px grid, scanlines and a vignette; everything readable floats above it on dark glass panels with white hairlines. Light is the material: indigo glows breathe behind sections, light beams run from content to a central core, and gradient words pick out the second half of each heading. The console look is earned by content, not decoration. Every label, date and metric on screen is a true CV fact or the live output of an on-page lab; the world never fakes telemetry, versions or uptime.\n\nTwo lights split the work. Indigo is the atmosphere (particles, beams, glows, focus, data accents in mono). Caravantes emerald is the brand and the action: the mark, the wordmark's \"AI\", and every primary pill. Four area tones (emerald data, indigo AI, rose integration/ops, fuchsia software and exploration) are applied through one local `--tone` variable so a card, its tile, its border glow and its beam always agree.\n\nDensity is generous on the outer page (88–128px section rhythm, centered or split headings) and compact inside panels (12px mono metadata, 14–15px body). Motion is long-eased (cubic-bezier(0.16, 1, 0.3, 1)) and ambient; every loop and reveal stops under reduced motion, and all content is visible without JavaScript.",
+    "keyCharacteristics": [
+      "Near-black void with layered atmosphere: particles, grid, scanlines, radial indigo glows.",
+      "Dark glass panels, 1px white hairlines at 5–16% opacity, 24px corners.",
+      "Indigo for atmosphere, emerald for the brand and primary actions, per-area tones via `--tone`.",
+      "Inter tight-tracked for everything readable; JetBrains Mono for dates, stacks, counts and metadata.",
+      "Light beams converging on a core as the recurring signature (specialties hub, experience timeline).",
+      "Truth over spectacle: no invented telemetry, status lights or numbers."
+    ],
+    "rules": [
+      {
+        "name": "The Two Lights Rule",
+        "body": "Indigo lights the world; emerald marks the person and the next action. A primary call to action is emerald; indigo is never a filled button.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Tone Rule",
+        "body": "An area-coded element sets `--tone` / `--tone-rgb` once and derives tile icon, border glow, badge, dates and beams from it. Never hard-code a second area color into the same component.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dashed Exploration Rule",
+        "body": "Dashed borders (fuchsia at 35–40%) mean synthetic or exploratory: labs, personal projects, the exploration node and its beam. Professional evidence is always solid-bordered.",
+        "section": "colors"
+      },
+      {
+        "name": "The Machine Print Rule",
+        "body": "Mono is for things a system would print (dates, stacks, counts, keyboard keys, lab values). Prose, names and actions stay in Inter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Gradient Word Rule",
+        "body": "Each section headline may carry one gradient phrase (indigo-300 to white, 90deg) on its second half. Body text, buttons and labels never use gradient text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Wordmark Rule",
+        "body": "Space Grotesk appears only in the \"Caravantes AI\" wordmark (600, 23px header, 17px footer).",
+        "section": "typography"
+      },
+      {
+        "name": "The Light Is Depth Rule",
+        "body": "Lift is expressed with tone-colored glows, radial halos and blur. Hard offset shadows are not part of this world.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Corner Glow Rule",
+        "body": "Feature cards (arsenal, contact form) use a gradient border (tone at 45–50% from the top-left corner fading to 6% white) plus a blurred tone bloom in that same corner.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the page on Void (#030305) with Panel (#0a0a0c) surfaces and 5–16% white hairlines.",
+      "Do make every primary action an emerald pill with Emerald Ink text.",
+      "Do set area color through `--tone` / `--tone-rgb` and derive borders, glows, badges and beams from it.",
+      "Do use JetBrains Mono for dates, stacks, counts and lab values; tabular numerals for figures.",
+      "Do express depth with tone glows, radial indigo light and backdrop blur, at 24px or 20px corners.",
+      "Do mark synthetic and exploratory work with dashed fuchsia borders.",
+      "Do stop every loop (particles, beams, orbits, rings, halos) and show all reveals under prefers-reduced-motion, and keep content visible without JavaScript."
+    ],
+    "donts": [
+      "Don't show fabricated system telemetry: status lights, uptime, latency, version numbers or invented metrics.",
+      "Don't place uppercase eyebrow or kicker labels above headings; a mono line above a career role is allowed only when it is the role's dates.",
+      "Don't use emerald as atmosphere or indigo as a filled call to action.",
+      "Don't use Space Grotesk outside the wordmark.",
+      "Don't use stock photography; project imagery is diagrams drawn from the case itself.",
+      "Don't use hard offset shadows or gradient fills on buttons and body text."
+    ]
+  }
+}
