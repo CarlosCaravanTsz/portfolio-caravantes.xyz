@@ -14,17 +14,12 @@
       href="assets/brand/caravantes-mark.svg"
       type="image/svg+xml"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="assets/fonts/inter-v20-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="assets/cv.css" />
   </head>
   <body>
     <nav class="cv-toolbar" aria-label="CV actions">
-      <a href="v3.html" class="cv-back"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Portfolio</a>
+      <a href="./" class="cv-back"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Portfolio</a>
       <span class="cv-toolbar-actions">
         <a href="CV.txt" download="Carlos-Caravantes-CV.txt">Plain text</a>
         <button type="button" id="print-cv" hidden>Save as PDF</button>
@@ -275,8 +270,8 @@
           <h2 id="education">Education</h2>
           <ul class="cv-education">
             <li>
-              <b>Master's in AI Software Development</b>, Big School &amp;
-              Universidad Isabel I, 2025
+              <b>Master's in AI Software Development</b>, BIG school &amp;
+              Universidad Isabel I, Oct 2025–Dec 2026 (in progress)
             </li>
             <li>
               <b>B.Eng. Automatic Control Engineering</b>, National Polytechnic
@@ -289,6 +284,26 @@
             <li>
               <b>Programming Technician</b>, CBTis No. 68, Puerto Vallarta,
               2014–2017
+            </li>
+          </ul>
+          <h2>Continuing education</h2>
+          <ul class="cv-education">
+            <li>
+              <b>Cloud Computing &amp; DevOps bootcamp</b>, BlockStellart,
+              Jun–Dec 2026 (in progress)
+            </li>
+            <li>
+              <b>Professional program in Cloud, AWS and infrastructure</b>,
+              Commit Academy, Mar–Dec 2026 (in progress)
+            </li>
+            <li><b>AI Engineering</b>, AI Hero (Matt Pocock), Sep 2026</li>
+            <li><b>Full Stack Bootcamp</b>, midu.dev, Oct 2025–Aug 2026</li>
+            <li>
+              <b>Master Front End XIX</b>, Lemoncode, Apr 2025–Apr 2026
+            </li>
+            <li>
+              <b>Professional Golang bootcamp</b>, Código Facilito, Mar–Sep
+              2025. Final project: ImagAI, an AI photo API
             </li>
           </ul>
           <h2>Languages</h2>

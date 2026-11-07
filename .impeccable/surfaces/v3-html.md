@@ -1,13 +1,13 @@
 ---
 version: 1
 slug: "v3-html"
-primary_target: "v3.html"
+primary_target: "index.html"
 related_targets: []
 ---
 
-# v3.html — portfolio home
+# index.html (formerly v3.html) — portfolio home
 
-Scope: the whole one-page portfolio (`v3.html`, `assets/*`). Mode: Experience with a hiring-first opening (recruiter is the primary visitor).
+Scope: the whole one-page portfolio (`index.html`, `assets/*`). Mode: Experience with a hiring-first opening (recruiter is the primary visitor).
 
 Audience and job: recruiters and tech leads decide in minutes whether Carlos is worth an interview; they need name, seniority, range and a contact path in the first scroll. Proof is the real CV (JLL, Globant, Zentrol, Axity; Dev.F only on cv.html), three professional case diagrams and three synthetic labs. Constraints: bilingual ES/EN, no-JS baseline, no build step or external JS libraries, reduced motion, WCAG 2.2 AA, nothing fabricated (no status/version/latency telemetry, no stock imagery).
 

@@ -7,10 +7,10 @@
         "rule": "cramped-padding",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T04:05:41.030Z",
-        "reason": "Static-scan only: rendered CDP scans of v3.html at 1440, 1100 and 390px (ES and EN) report no cramped-padding; education rows have 22px block padding"
+        "reason": "Static-scan only: rendered CDP scans of index.html at 1440, 1100 and 390px (ES and EN) report no cramped-padding; education rows have 22px block padding"
       },
       {
         "rule": "marketing-buzzword",
@@ -40,7 +40,7 @@
         "rule": "gradient-text",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T06:37:09.594Z",
         "reason": "user pinned the V2 visual world (2026-11-07); gradient name and heading words are part of that brief"
@@ -55,7 +55,7 @@
         "rule": "dark-glow",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T06:37:50.056Z",
         "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
@@ -73,7 +73,7 @@
         "rule": "ai-color-palette",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T06:37:50.443Z",
         "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
@@ -91,7 +91,7 @@
         "rule": "repeating-stripes-gradient",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T06:37:50.785Z",
         "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
@@ -109,7 +109,7 @@
         "rule": "codex-grid-background",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T06:37:51.156Z",
         "reason": "user pinned the V2 visual world (2026-11-07): glowing core, grid, scanlines, violet accents are part of that brief"
@@ -127,7 +127,7 @@
         "rule": "gray-on-color",
         "value": "*",
         "files": [
-          "v3.html"
+          "index.html"
         ],
         "createdAt": "2026-11-07T06:38:06.664Z",
         "reason": "static engine composites the form's gradient border (rgba 66,220,180,.3) as the input background; rendered CDP scans report no contrast issue; real input bg is ~#0f0f12 with placeholder at 58% white"

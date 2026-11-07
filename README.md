@@ -1,12 +1,12 @@
 # Caravantes AI — Carlos Caravantes
 
-Portafolio estático bilingüe (español e inglés). Abre `v3.html` directamente o sirve esta carpeta:
+Portafolio estático bilingüe (español e inglés). Abre `index.html` directamente o sirve esta carpeta:
 
 ```powershell
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Visita http://127.0.0.1:4173/v3.html. La entrada principal es `v3.html`; el CV imprimible está en `cv.html`.
+Visita http://127.0.0.1:4173/. La entrada principal es `index.html`; el CV imprimible está en `cv.html`.
 
 ## Identidad Caravantes AI
 
@@ -16,7 +16,7 @@ Caravantes AI es la marca personal de Carlos: símbolo entrelazado, esmeralda de
 
 ## Contenido y edición
 
-- `v3.html`: portada con nombre y puesto sobre las partículas, franja de empresas, hub de especialidades, arsenal técnico, proyectos, experiencia convergente, formación, sobre mí y contacto. El texto en español vive aquí.
+- `index.html`: portada con nombre y puesto sobre las partículas, franja de empresas, hub de especialidades, arsenal técnico, proyectos, experiencia convergente, formación, sobre mí y contacto. El texto en español vive aquí.
 - `cv.html` y `assets/cv.css`: CV en inglés, en orden cronológico inverso y listo para imprimir o guardar como PDF. Usa solo datos de `CV.txt`.
 - `assets/i18n.js`: textos en inglés y textos generados por JavaScript en ambos idiomas.
 - `assets/styles.css`: paleta, escala tipográfica, estructura y diseño adaptable.
@@ -32,7 +32,7 @@ Caravantes AI es la marca personal de Carlos: símbolo entrelazado, esmeralda de
 
 El español está en el HTML para que la página funcione sin JavaScript. Los elementos traducibles llevan `data-i18n` (texto), `data-i18n-html` (texto con marcado) o `data-i18n-attr="atributo:clave"`. Para añadir un texto, márcalo en el HTML y añade la clave en el diccionario `en` de `assets/i18n.js`; el español se lee del HTML automáticamente.
 
-El idioma se elige en este orden: `?lang=es|en` en la URL, la elección guardada y el idioma del navegador. El selector ES/EN guarda la elección y actualiza la URL, de modo que un enlace como `v3.html?lang=en` abre la versión en inglés.
+El idioma se elige en este orden: `?lang=es|en` en la URL, la elección guardada y el idioma del navegador. El selector ES/EN guarda la elección y actualiza la URL, de modo que un enlace como `?lang=en` abre la versión en inglés.
 
 ### Proyectos
 
@@ -55,11 +55,15 @@ Los tres casos profesionales sintetizan la experiencia descrita en `CV.txt`; sus
 - «Organizar» alterna entre órbita y cuadrícula; «Trazado» cambia curvas por rectas. «Deshacer» conserva hasta 30 operaciones. «Restaurar» recupera posiciones y conexiones originales de todos los proyectos.
 - Las posiciones y conexiones se mantienen durante los filtros, los cambios de vista y de idioma, dentro de la página actual. Al recargar se vuelve a la distribución original; los cambios no modifican el catálogo.
 - La estela de partículas se limita al lienzo, se puede desactivar y se detiene fuera de vista, al abrir un caso o al ocultar la pestaña. Se desactiva con movimiento reducido. En móvil, el lienzo se desplaza horizontalmente y las cabeceras admiten arrastre táctil.
-- Cada caso se puede compartir mediante `v3.html#project/enterprise-lakehouse` (u otro `id`). Cambiar de idioma con un caso abierto lo traduce sin cerrarlo.
+- Cada caso se puede compartir mediante `/#project/enterprise-lakehouse` (u otro `id`). Cambiar de idioma con un caso abierto lo traduce sin cerrarlo.
 - Los diagramas permiten seleccionar componentes o recorrer el flujo. Con movimiento reducido, el recorrido avanza manualmente.
 - `/` enfoca el buscador; `Esc` cierra el caso o el menú móvil.
 - El correo es el canal principal de contacto. El formulario abre un borrador en WhatsApp; el visitante decide enviarlo. No hay backend de contacto.
 
-Sin dependencias de JavaScript, compilación, claves ni instalación. Las fuentes se cargan desde Google Fonts con alternativas locales. Las ilustraciones, los iconos y el favicon son SVG locales. Si JavaScript está desactivado, la portada, el atlas, la trayectoria, la experiencia, la formación, el contacto por correo y el CV siguen disponibles (en español); los controles que necesitan JavaScript se ocultan.
+Sin dependencias de JavaScript, compilación, claves ni instalación. Las fuentes (Inter, JetBrains Mono y Space Grotesk recortada a las letras del logotipo) están alojadas en `assets/fonts/`; no hay peticiones a terceros. Las ilustraciones, los iconos y el favicon son SVG locales. Si JavaScript está desactivado, la portada, el atlas, la trayectoria, la experiencia, la formación, el contacto por correo y el CV siguen disponibles (en español); los controles que necesitan JavaScript se ocultan.
 
 Antes de publicar, revisa que las fechas, cargos y estudios del CV sigan vigentes, y añade evidencias públicas a los casos cuando estén disponibles.
+
+## Despliegue (Cloudflare)
+
+El sitio se sirve como Worker de archivos estáticos (`wrangler.jsonc`). `npx wrangler deploy` ejecuta `scripts/build-dist.mjs`, que copia a `dist/` solo lo público (`index.html`, `cv.html`, `CV.txt`, `assets/`, `_headers`) y añade `?v=<hash>` a los CSS, JS e imágenes enlazados desde el HTML; por eso `_headers` puede guardar `/assets/*` en caché un día. Las carpetas de herramientas, `V2/`, `ref/` y los `.md` nunca se publican.

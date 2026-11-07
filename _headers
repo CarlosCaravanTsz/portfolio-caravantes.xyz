@@ -1,0 +1,10 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# CSS, JS and images referenced from the HTML carry ?v=<content hash>, and
+# font files carry their version in the name, so a day of caching is safe.
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800

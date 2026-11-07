@@ -30,7 +30,22 @@
   const onScroll = () =>
     header.classList.toggle("is-scrolled", scrollY > 24);
   addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  /* First check waits for a frame: reading scrollY during script start would
+     force the initial layout inside this task. */
+  requestAnimationFrame(onScroll);
+
+  /* Decorative loops (beams, rings, orbiting dots) pause while their section
+     is off-screen, so an idle page does not keep repainting. */
+  if ("IntersectionObserver" in window) {
+    const idle = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries)
+          entry.target.classList.toggle("is-offscreen", !entry.isIntersecting);
+      },
+      { rootMargin: "200px 0px" },
+    );
+    $$("main > section").forEach((section) => idle.observe(section));
+  }
 
   /* Hero titles: cross-fade one at a time; under reduced motion CSS shows all */
   const rotator = $("[data-rotator]");
@@ -97,29 +112,34 @@
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, width, height);
       ctx.globalCompositeOperation = "lighter";
-      for (let i = 0; i < COUNT; i++) {
-        const o = i * 4;
-        const x0 = points[o],
-          y0 = points[o + 1] + bob,
-          z0 = points[o + 2];
-        const x1 = x0 * cy + z0 * sy;
-        const z1 = -x0 * sy + z0 * cy;
-        const y2 = y0 * cx - z1 * sx;
-        const z2 = y0 * sx + z1 * cx;
-        const depth = 3 - z2;
-        if (depth < 0.15) continue;
-        const scale = focal / depth;
-        const px = halfW + x1 * scale;
-        const py = halfH - y2 * scale;
-        if (px < -4 || px > width + 4 || py < -4 || py > height + 4) continue;
-        const size = Math.max(0.6, 0.03 * scale * (0.55 + points[o + 3] * 0.45));
-        const alpha = Math.min(0.85, 0.25 + 1.6 / depth) * (0.5 + points[o + 3] * 0.5);
-        ctx.fillStyle =
-          points[o + 3] > 0.93
-            ? `rgba(66, 220, 180, ${alpha})`
-            : `rgba(99, 102, 241, ${alpha})`;
-        ctx.fillRect(px - size / 2, py - size / 2, size, size);
+      /* Two passes with a fixed fillStyle and numeric globalAlpha: no color
+         string is built or parsed per point per frame. */
+      for (let pass = 0; pass < 2; pass++) {
+        const emerald = pass === 1;
+        ctx.fillStyle = emerald ? "rgb(66, 220, 180)" : "rgb(99, 102, 241)";
+        for (let i = 0; i < COUNT; i++) {
+          if (points[i * 4 + 3] > 0.93 !== emerald) continue;
+          const o = i * 4;
+          const x0 = points[o],
+            y0 = points[o + 1] + bob,
+            z0 = points[o + 2];
+          const x1 = x0 * cy + z0 * sy;
+          const z1 = -x0 * sy + z0 * cy;
+          const y2 = y0 * cx - z1 * sx;
+          const z2 = y0 * sx + z1 * cx;
+          const depth = 3 - z2;
+          if (depth < 0.15) continue;
+          const scale = focal / depth;
+          const px = halfW + x1 * scale;
+          const py = halfH - y2 * scale;
+          if (px < -4 || px > width + 4 || py < -4 || py > height + 4) continue;
+          const size = Math.max(0.6, 0.03 * scale * (0.55 + points[o + 3] * 0.45));
+          const alpha = Math.min(0.85, 0.25 + 1.6 / depth) * (0.5 + points[o + 3] * 0.5);
+          ctx.globalAlpha = alpha;
+          ctx.fillRect(px - size / 2, py - size / 2, size, size);
+        }
       }
+      ctx.globalAlpha = 1;
       ctx.globalCompositeOperation = "source-over";
     };
 
@@ -160,7 +180,8 @@
         draw(performance.now());
       } else play();
     });
-    resize();
+    /* No synchronous resize(): the ResizeObserver delivers the first size
+       after the browser has laid out the page, so start-up forces no layout. */
     requestAnimationFrame(() => canvas.classList.add("is-ready"));
     play();
   }

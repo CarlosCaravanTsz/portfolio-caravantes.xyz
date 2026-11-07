@@ -3,6 +3,32 @@
    Emerald carries the brand: the mark and the primary actions.
    Per-area tones: emerald data, indigo AI, rose integration/ops, fuchsia
    software and exploration. */
+/* Self-hosted fonts (SIL OFL, latin subset from Google Fonts). Space Grotesk
+   is cut down to the wordmark letters only. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("fonts/inter-v20-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("fonts/jetbrains-mono-v24-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url("fonts/space-grotesk-v22-wordmark.woff2") format("woff2");
+  unicode-range: U+0020, U+0041, U+0043, U+0049, U+0061, U+0065, U+006E, U+0072, U+0073, U+0074, U+0076;
+}
 :root {
   color-scheme: dark;
   --bg: #030305;
@@ -671,16 +697,7 @@ html.js .role-rotator > .is-active {
   background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
 }
 
-/* Hero entrance: the one authored moment. Content is visible without JS. */
-html.js .hero .reveal {
-  opacity: 0;
-  transform: translateY(24px) scale(0.98);
-  filter: blur(8px);
-  transition:
-    opacity 1.2s var(--ease) var(--delay, 0ms),
-    transform 1.2s var(--ease) var(--delay, 0ms),
-    filter 1.2s var(--ease) var(--delay, 0ms);
-}
+/* Scroll reveals for everything below the fold. Content is visible without JS. */
 html.js .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -689,8 +706,7 @@ html.js .reveal {
     transform 0.9s var(--ease) var(--delay, 0ms);
   animation: reveal-safety 0s 3.5s forwards;
 }
-html.js .reveal.in-view,
-html.js .hero .reveal.in-view {
+html.js .reveal.in-view {
   opacity: 1;
   transform: none;
   filter: none;
@@ -700,6 +716,24 @@ html.js .hero .reveal.in-view {
     opacity: 1;
     transform: none;
     filter: none;
+  }
+}
+/* Hero entrance: the one authored moment. Pure CSS, so it starts on first
+   paint instead of waiting for the scripts (keeps LCP close to FCP). */
+html.js .hero .reveal {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: none;
+  animation: hero-in 1.1s var(--ease) var(--delay, 0ms) both;
+}
+/* Starts at 0.01, not 0: Chrome skips fully transparent text as an LCP
+   candidate, which would push LCP to a later paint. Looks identical. */
+@keyframes hero-in {
+  from {
+    opacity: 0.01;
+    transform: translateY(24px) scale(0.98);
+    filter: blur(8px);
   }
 }
 
@@ -1209,18 +1243,6 @@ html.js .hero .reveal.in-view {
     center / contain no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='m8.5 12.2 2.4 2.4 4.7-5'/%3E%3C/svg%3E")
     center / contain no-repeat;
-}
-.arsenal-cloud {
-  margin-top: 40px;
-  padding-top: 32px;
-  border-top: 1px solid var(--line-soft);
-  text-align: center;
-  font: 13px var(--mono);
-  letter-spacing: 0.04em;
-  color: var(--muted);
-}
-.arsenal-cloud span {
-  color: var(--faint);
 }
 
 /* Projects explorer */
@@ -1840,6 +1862,96 @@ html.js .hero .reveal.in-view {
 .education-list p {
   font-size: var(--fs-small);
   color: var(--muted);
+}
+
+/* Continuing education: real school marks on uniform tiles */
+.learning {
+  margin-top: 88px;
+}
+.learning-title {
+  margin-bottom: 24px;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+.learning-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  background: var(--panel);
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
+}
+.learning-card.is-wide {
+  grid-column: span 2;
+}
+.learning-card:hover {
+  border-color: var(--line);
+  background: #0c0c10;
+}
+.learning-logo {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+.learning-logo img {
+  object-fit: contain;
+}
+.learning-logo.is-fill {
+  border: 0;
+}
+.learning-logo.is-fill img {
+  width: 100%;
+  height: 100%;
+}
+.learning-card h4 {
+  font-size: 17px;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+.learning-card p {
+  margin-top: 4px;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--muted);
+}
+.learning-card .learning-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 12px;
+  font: 500 var(--fs-label) var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.learning-status {
+  padding: 3px 8px;
+  border: 1px solid rgba(66, 220, 180, 0.3);
+  border-radius: 7px;
+  background: rgba(66, 220, 180, 0.08);
+  color: var(--accent);
+}
+.learning-status.is-done {
+  border-color: rgba(129, 140, 248, 0.3);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--indigo-300);
 }
 
 /* About */
@@ -2588,6 +2700,9 @@ dialog::backdrop {
 
 /* Responsive */
 @media (max-width: 1240px) {
+  .learning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .atlas-nodes {
     column-gap: 280px;
   }
@@ -2773,6 +2888,9 @@ dialog::backdrop {
   .education-layout .section-heading {
     position: static;
   }
+  .learning {
+    margin-top: 64px;
+  }
   .about-graphic {
     aspect-ratio: auto;
     max-width: 520px;
@@ -2909,6 +3027,15 @@ dialog::backdrop {
   .education-year {
     grid-row: auto;
   }
+  .learning-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .learning-card.is-wide {
+    grid-column: auto;
+  }
+  .learning-card {
+    padding: 20px;
+  }
   #contact-form,
   .contact-email-card {
     padding: 24px;
@@ -3001,4 +3128,11 @@ dialog::backdrop {
     filter: none;
     transform: none;
   }
+}
+
+/* Set by universe.js while a section is off-screen: decorative loops pause. */
+.is-offscreen *,
+.is-offscreen *::before,
+.is-offscreen *::after {
+  animation-play-state: paused !important;
 }

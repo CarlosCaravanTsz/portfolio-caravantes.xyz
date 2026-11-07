@@ -1,0 +1,22 @@
+{
+  // Static portfolio served by Cloudflare Workers (assets only, no script).
+  // Deploy: npx wrangler deploy  (the build step copies the public files to dist/)
+  "name": "caravantes-portfolio",
+  "compatibility_date": "2026-11-01",
+  // Served only on the real domain (no duplicate *.workers.dev copy).
+  "workers_dev": false,
+  "preview_urls": false,
+  // Cloudflare creates the DNS records and the certificate for these.
+  "routes": [
+    { "pattern": "caravantes.xyz", "custom_domain": true },
+    { "pattern": "www.caravantes.xyz", "custom_domain": true }
+  ],
+  "build": {
+    "command": "node scripts/build-dist.mjs"
+  },
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

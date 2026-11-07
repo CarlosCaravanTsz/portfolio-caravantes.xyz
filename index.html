@@ -11,6 +11,8 @@
       name="description"
       content="Carlos Caravantes, Data Engineer Full Stack en JLL. DataOps y cloud en Azure y Databricks, software full stack y agentes de IA. Casos profesionales, CV y laboratorios."
     />
+    <link rel="canonical" href="https://caravantes.xyz/" />
+    <meta property="og:url" content="https://caravantes.xyz/" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -26,12 +28,7 @@
       href="assets/brand/caravantes-mark.svg"
       type="image/svg+xml"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="assets/fonts/inter-v20-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/brand-theme.css" />
     <link rel="stylesheet" href="assets/project-map.css" />
@@ -482,10 +479,6 @@
               </ul>
             </article>
           </div>
-          <p class="arsenal-cloud reveal">
-            <span data-i18n="arsenal.cloud">También en AWS:</span>
-            Glue&nbsp;· Redshift&nbsp;· EMR
-          </p>
         </div>
       </section>
       <section
@@ -735,13 +728,6 @@
           </div>
           <ol class="education-list reveal">
             <li>
-              <span class="education-year">2025</span>
-              <h3 data-i18n="education.master">
-                Máster en Desarrollo de Software con Inteligencia Artificial
-              </h3>
-              <p>Big School · Universidad Isabel I</p>
-            </li>
-            <li>
               <span class="education-year">2017–2021</span>
               <h3 data-i18n="education.engineering">
                 Ingeniería en Control y Automatización
@@ -764,6 +750,102 @@
             </li>
           </ol>
         </div>
+        <div class="page-width learning">
+          <h3 class="learning-title reveal" id="learning-title" data-i18n="learning.title">
+            Formación continua
+          </h3>
+          <ul class="learning-grid" aria-labelledby="learning-title">
+            <li class="learning-card is-wide reveal">
+              <span class="learning-logo is-fill"
+                ><img src="assets/learning/big-school.svg" alt="" width="48" height="48" loading="lazy"
+              /></span>
+              <div>
+                <h4>BIG school</h4>
+                <p data-i18n="education.master">Máster en Desarrollo de Software con IA · Universidad Isabel I</p>
+                <p class="learning-meta">
+                  <span data-i18n="learning.bigDate">Oct 2025 — dic 2026</span>
+                  <span class="learning-status" data-i18n="learning.now">En curso</span>
+                </p>
+              </div>
+            </li>
+            <li class="learning-card reveal" style="--delay: 60ms">
+              <span class="learning-logo"
+                ><img src="assets/learning/ai-hero.svg" alt="" width="26" height="26" loading="lazy"
+              /></span>
+              <div>
+                <h4>AI Hero</h4>
+                <p>AI Engineering · Matt Pocock</p>
+                <p class="learning-meta"><span>Sep 2026</span></p>
+              </div>
+            </li>
+            <li class="learning-card reveal" style="--delay: 120ms">
+              <span class="learning-logo is-fill"
+                ><img src="assets/learning/blockstellart.png" alt="" width="48" height="48" loading="lazy"
+              /></span>
+              <div>
+                <h4>BlockStellart</h4>
+                <p data-i18n="learning.blockstellart">Bootcamp de Cloud Computing y DevOps</p>
+                <p class="learning-meta">
+                  <span data-i18n="learning.blockstellartDate">Jun — dic 2026</span>
+                  <span class="learning-status" data-i18n="learning.now">En curso</span>
+                </p>
+              </div>
+            </li>
+            <li class="learning-card reveal">
+              <span class="learning-logo"
+                ><img src="assets/learning/commit-academy.png" alt="" width="32" height="32" loading="lazy"
+              /></span>
+              <div>
+                <h4>Commit Academy</h4>
+                <p data-i18n="learning.commit">Programa profesional de Cloud, AWS e infraestructura</p>
+                <p class="learning-meta">
+                  <span data-i18n="learning.commitDate">Mar — dic 2026</span>
+                  <span class="learning-status" data-i18n="learning.now">En curso</span>
+                </p>
+              </div>
+            </li>
+            <li class="learning-card reveal" style="--delay: 60ms">
+              <span class="learning-logo"
+                ><img src="assets/learning/midudev.svg" alt="" width="30" height="26" loading="lazy"
+              /></span>
+              <div>
+                <h4>midu.dev</h4>
+                <p>Bootcamp Full Stack</p>
+                <p class="learning-meta">
+                  <span data-i18n="learning.miduDate">Oct 2025 — ago 2026</span>
+                </p>
+              </div>
+            </li>
+            <li class="learning-card reveal" style="--delay: 120ms">
+              <span class="learning-logo"
+                ><img src="assets/learning/lemoncode.svg" alt="" width="34" height="34" loading="lazy"
+              /></span>
+              <div>
+                <h4>Lemoncode</h4>
+                <p>Master Front End XIX</p>
+                <p class="learning-meta">
+                  <span data-i18n="learning.lemonDate">Abr 2025 — abr 2026</span>
+                </p>
+              </div>
+            </li>
+            <li class="learning-card reveal" style="--delay: 180ms">
+              <span class="learning-logo is-fill"
+                ><img src="assets/learning/codigo-facilito.png" alt="" width="48" height="48" loading="lazy"
+              /></span>
+              <div>
+                <h4>Código Facilito</h4>
+                <p data-i18n="learning.facilito">
+                  Bootcamp de Golang profesional. Proyecto final: ImagAI, API de
+                  fotos con IA.
+                </p>
+                <p class="learning-meta">
+                  <span data-i18n="learning.facilitoDate">Mar — sep 2025</span>
+                  <span class="learning-status is-done" data-i18n="learning.done">Egresado</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section
         class="section about-section"
@@ -774,12 +856,13 @@
           <div class="about-graphic reveal">
             <img
               class="brand-signature"
-              src="logo-primary-2026-09-12.png"
+              src="assets/brand/signature-2026-09-12.webp"
               alt="Firma Caravantes AI. Tech-driven, AI-enhanced."
               data-i18n-attr="alt:about.signatureAlt"
               loading="lazy"
-              width="3011"
-              height="1446"
+              decoding="async"
+              width="1200"
+              height="576"
             />
           </div>
           <div class="about-copy reveal" style="--delay: 80ms">
