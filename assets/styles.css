@@ -1708,6 +1708,18 @@ html.js .hero .reveal {
   font-weight: 500;
   color: var(--soft);
 }
+/* Company marks: transparent PNGs, dark text recolored for the dark ground */
+.career-company {
+  margin: 12px 0 16px;
+}
+.career-logo {
+  display: block;
+  width: auto;
+  height: 30px;
+  max-width: 150px;
+  object-fit: contain;
+  object-position: left center;
+}
 .career-summary {
   max-width: 60ch;
   margin-bottom: 18px;
@@ -1918,6 +1930,11 @@ html.js .hero .reveal {
 .learning-logo.is-fill img {
   width: 100%;
   height: 100%;
+}
+/* MEGA: red pixel mark on pure black, as on mega.dev */
+.learning-logo.is-mega {
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  background: #000;
 }
 .learning-card h4 {
   font-size: 17px;

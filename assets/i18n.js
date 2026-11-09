@@ -261,6 +261,8 @@
       "learning.blockstellartDate": "Jun — Dec 2026",
       "learning.commit": "Professional program in Cloud, AWS and infrastructure",
       "learning.commitDate": "Mar — Dec 2026",
+      "learning.mega": "AI agent engineering program · Kent C. Dodds, Theo Browne",
+      "learning.megaDate": "Oct 2026",
       "learning.bigDate": "Oct 2025 — Dec 2026",
       "learning.lemonDate": "Apr 2025 — Apr 2026",
       "learning.miduDate": "Oct 2025 — Aug 2026",
