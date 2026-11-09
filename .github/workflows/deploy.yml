@@ -1,0 +1,44 @@
+# Deploys the site to Cloudflare Workers (caravantes.xyz) whenever a PR is
+# merged into the main branch. A merge lands as a push on that branch, so
+# direct pushes would deploy too; a branch protection rule that requires an
+# approved PR makes the merge the only way in.
+name: Deploy to Cloudflare
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch: # manual re-deploy from the Actions tab
+
+# One deploy at a time; a newer merge cancels a deploy still waiting.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: production
+      url: https://caravantes.xyz
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # wrangler runs the build command from wrangler.jsonc
+      # (node scripts/build-dist.mjs -> dist/) before uploading.
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
